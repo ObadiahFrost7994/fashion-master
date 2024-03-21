@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.cart {
+  float: right;
+}
+
+.cart button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart button:hover {
+  background-color: #45a049;
+}
+
+.cart #cartCount {
+  background-color: #f44336;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.clothing-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category {
+  width: 100%;
+  margin-bottom: 100px; /* Add some margin between categories */
+}
+
+.category h2 {
+  margin-bottom: 10px; /* Add some margin below category titles */
+}
+
+.category .item {
+  display: flex; /* Make items in each category appear horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: space-around; /* Distribute items evenly along the row */
+  margin-bottom: 10px; /* Add some margin between items */
+}
+
+.item {
+  width: calc(33.33% - 20px); /* Adjust item width to fit 3 items per row with some margin */
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.buy-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background-color: #45a049;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
